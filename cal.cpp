@@ -12,7 +12,7 @@ double multiply(double a, double b);
 double divide(double a, double b);
 double power(double base, double exponent);
 double squareRoot(double a);
-double modulus(int a, int b);
+double modulusOperation(int a, int b);
 void clearConsole();
 
 int main() {
@@ -82,7 +82,7 @@ int main() {
                 if (int2 == 0) {
                     cout << "Error: Division by zero is not allowed." << endl;
                 } else {
-                    cout << "Result: " << modulus(int1, int2) << endl;
+                    cout << "Result: " << modulusOperation(int1, int2) << endl;
                 }
                 break;
 
@@ -143,7 +143,7 @@ double squareRoot(double a) {
     return sqrt(a);
 }
 
-double modulus(int a, int b) {
+double modulusOperation(int a, int b) {
     return a % b;
 }
 
